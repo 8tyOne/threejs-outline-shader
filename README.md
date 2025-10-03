@@ -32,7 +32,7 @@ The focus lies on **clear silhouettes** and a **simple GUI**, making the project
 - Custom `MinimalOutlinePass`  
 
 ## Demo
-👉 *(Optional: Add your GitHub Pages link here, e.g. https://username.github.io/repo-name/)*
+https://8tyone.github.io/threejs-outline-shader/
 
 ---
 
