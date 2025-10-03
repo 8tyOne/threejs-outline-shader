@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Viewer</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+<div id="site">
+  <header class="head">
+    <div>
+      <h1>Three.js 3D Viewer – Custom Outline Shader Showcase</h1>
+    </div>
+    <div>
+      <p>This project is a modular Three.js viewer focused on demonstrating a lightweight custom outline rendering shader (MinimalOutlinePass).</p>
+    </div>
+  </header>
+
+  <main>
+    <article class="article-container">
+      <section class="sector">
+        <h2>Features</h2>
+        <p>Version 1.0</p>
+        <ul>
+          <li>Custom Outline Shader: replaces the default OutlinePass with a minimal solution that renders clean silhouettes in adjustable color and thickness.</li>
+          <li>Pixelation Shader: real-time pixelation effect for a retro 16-bit aesthetic.</li>
+          <li>Dynamic Lighting: three adjustable directional lights plus ambient light.</li>
+          <li>Wireframe Mode: toggle wireframe rendering for all models.</li>
+          <li>GUI (lil-gui): intuitive controls for outline thickness, outline color, light intensities, pixelation level, and model selection.</li>
+          <li>Model Loader: load GLTF models directly via a dropdown menu.</li> 
+        </ul>
+      </section>
+
+      <section class="sector">
+        <h4>Motivation</h4>
+        <p>The goal was to create a minimal yet performant showcase for shader effects. The focus lies on clear silhouettes and a simple GUI, making the project well-suited for experimenting with stylized rendering, retro aesthetics, and shader prototyping.</p>
+      </section>
+
+      <section class="sector">
+        <h4>Integration</h4>
+        <div class="viewer-wrapper">
+          <div class="ans-bg"></div>
+          <canvas id="bgGrid"></canvas>
+          <div class="jscontainer"></div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <section class="sector">
+      <h4>Copyright</h4>
+      <p>My content is under copyright according to CC BY-NC-ND 4.0. You must not use the material for commercial purposes. You must give appropriate credit, provide a link to this site if you repost the material. If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.</p>
+    </section>
+    <h6><a href="#start">Page Start ⇪</a></h6>
+    <p class="foot">© 2025 8ty.one – All rights reserved. | <a href="https://8ty.one/#privacy-policy">Privacy Policy</a></p>
+  </footer>
+</div>
+
+<!-- Three.js Import Map -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- Main Script -->
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
